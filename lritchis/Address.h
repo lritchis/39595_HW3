@@ -10,9 +10,9 @@ public:
    virtual std::string getAddress( );
 
 private:
-   std::string street;
-   std::string city;
-   std::string state;
-   int zip;
+   const std::string street;
+   const std::string city;
+   const std::string state;
+   const int zip;
 };
 #endif /* ADDRESS_H_ */

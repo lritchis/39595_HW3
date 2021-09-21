@@ -10,7 +10,7 @@ public:
    virtual int getZipCode( );
    virtual std::string getDateOfBirth( ); 
 private:
-   std::string name;
+   const std::string name;
    std::string dateOfBirth;
    Address address;
 };

@@ -9,6 +9,6 @@ public:
    virtual std::string getRole( ); 
    virtual double getSalary( ); 
 private:
-   double salary;
+   const double salary;
 };
 #endif /* EMPLOYEE_H_ */

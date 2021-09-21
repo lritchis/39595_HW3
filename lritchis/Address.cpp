@@ -2,11 +2,11 @@
 #include "Address.h"
 #include <sstream>
 
-Address::Address(std::string _street, std::string _city, std::string _state, int _zip) {
-   street = _street;
-   city = _city;
-   state = _state;
-   zip = _zip;
+Address::Address(std::string _street, std::string _city, std::string _state, int _zip) : street(_street), city(_city), state(_state), zip(_zip){
+   //street = _street;
+   //city = _city;
+   //state = _state;
+   //zip = _zip;
 }
 
 int Address::getZipCode( ) {
