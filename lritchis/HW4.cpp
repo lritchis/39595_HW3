@@ -8,10 +8,6 @@ int main(int argc, char** args) {
                                std::string("TX"), 78130);
    Address add2 = Address(std::string("801 Bldg"),std::string("Yorktown Heights"), 
                                std::string("NY"), 10598);
-   
-
-   Address& addRef1 = add1;
-   Address& addRef2 = add2;
 
    std::cout << "add1:\n"+add1.getAddress( ) << std::endl;
    std::cout << "add2:\n"+add2.getAddress( ) << std::endl;
