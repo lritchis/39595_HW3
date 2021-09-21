@@ -5,7 +5,7 @@ OBJS = HW4.o Address.o Person.o Employee.o
 CC = g++
 INCLUDE = 
 LIBS = 
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -std=c++11
 EXECUTABLE = HW2
 COMMANDLINE =
 
