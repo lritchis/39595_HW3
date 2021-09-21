@@ -3,12 +3,17 @@
 #include "Employee.h"
 
 int main(int argc, char** args) {
-   Address* add1 = new Address(std::string("1281 Gruene Rd"),std::string("Greune"), 
+   Address add1 = Address(std::string("1281 Gruene Rd"),std::string("Greune"), 
                                std::string("TX"), 78130);
-   Address* add2 = new Address(std::string("801 Bldg"),std::string("Yorktown Heights"), 
+   Address add2 = Address(std::string("801 Bldg"),std::string("Yorktown Heights"), 
                                std::string("NY"), 10598);
-   std::cout << "add1:\n"+add1->getAddress( ) << std::endl;
-   std::cout << "add2:\n"+add2->getAddress( ) << std::endl;
+   
+
+   Address& addRef1 = add1;
+   Address& addRef2 = add2;
+
+   std::cout << "add1:\n"+add1.getAddress( ) << std::endl;
+   std::cout << "add2:\n"+add2.getAddress( ) << std::endl;
    
    Employee* emp1 = new Employee(std::string("Jerry Jeff Walker"), 3, 16, 1942, add1, 55000);
    Employee* emp2 = new Employee(std::string("Fran Allen"), 8, 4, 1932, add2, 256000);

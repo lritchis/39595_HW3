@@ -4,7 +4,7 @@
 
 class Person {
 public:
-   Person(std::string _name, int _birthMonth, int _birthDay, int _birthYear, Address* _address); 
+   Person(std::string _name, int _birthMonth, int _birthDay, int _birthYear, Address _address); 
    virtual std::string getRole( ); 
    virtual std::string getName( ); 
    virtual int getZipCode( );
@@ -12,6 +12,6 @@ public:
 private:
    std::string name;
    std::string dateOfBirth;
-   Address* address;
+   Address address;
 };
 #endif /* PERSON_H_ */
