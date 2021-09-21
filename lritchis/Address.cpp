@@ -13,5 +13,5 @@ int Address::getZipCode( ) {
 }
 
 std::string Address::getAddress( ) {
-   return street + "\n" + city + "\n" + state + "\n" + std::to_string(getZipCode());
+   return street + "\n" + city + "\n" + state + "\n" + std::to_string(zip) + "\n";
 }
