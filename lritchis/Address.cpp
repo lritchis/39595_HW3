@@ -1,5 +1,6 @@
 #include <string>
 #include "Address.h"
+#include <sstream>
 
 Address::Address(std::string _street, std::string _city, std::string _state, int _zip) {
    street = _street;
