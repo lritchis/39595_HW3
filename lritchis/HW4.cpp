@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Address.h"
 #include "Employee.h"
+#include <string>
 
 int main(int argc, char** args) {
    Address add1 = Address(std::string("1281 Gruene Rd"),std::string("Greune"), 
