@@ -2,25 +2,25 @@
 # this reason.  The right way to do this is to use patterns.  The "%" pattern
 # allows any file to be matched.
 OBJS = HW4.o Address.o Person.o Employee.o
-CC = g++
+CXX = g++
 INCLUDE = 
 LIBS = 
-CFLAGS = -Wall -g -std=c++11
-EXECUTABLE = HW2
+CXXFLAGS = -Wall -g -std=c++11
+EXECUTABLE = HW4
 COMMANDLINE =
 
 .PHONY : run
 run : $(EXECUTABLE)
 	./$(EXECUTABLE) $(COMMANDLINE)
 
-cleanmake : clean HW1
+cleanmake : clean HW4
 
 .PHONY : $(EXECUTABLE)
 $(EXECUTABLE) :  $(OBJS)
-	$(CC) $(CFLAGS) -o $(EXECUTABLE) $(OBJS) $(INCLUDE) $(LIBS)
+	$(CXX) $(XXFLAGS) -o $(EXECUTABLE) $(OBJS) $(INCLUDE) $(LIBS)
 
 %.o : %.c 
-	$(CC) $(CFLAGS) -c $@ $(INCLUDE) $(LIBS)
+	$(CXX) $(CXXFLAGS) -c $@ $(INCLUDE) $(LIBS)
 
 clean :
 	rm $(EXECUTABLE) ${OBJS} 
